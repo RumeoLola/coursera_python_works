@@ -6,7 +6,7 @@ if len(name) < 1:
     name = "mbox-short.txt"
 handle = open(name)
 
-dice = {}
+lisst = []
 count = 0
 for line in handle:
     line = line.rstrip()
@@ -14,10 +14,10 @@ for line in handle:
     if "From" in line:
         count += 1
         for word in line:
-            # get each email
-            dice[word] = dice.get(word, 0) + 1
+            # get each
+            lisst.insert(0, word)
     else:
         continue
-    print(line[1:2])
+    print(*line[1:2]) # the asterix * removes the brakets and quotations
 print("There were", count, "lines in the file with From as the first word")
 handle.close()
