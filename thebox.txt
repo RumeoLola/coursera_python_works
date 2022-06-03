@@ -1909,4 +1909,3 @@ This automatic notification message was sent by Sakai Collab (https://collab.sak
 You can modify how you receive notifications at My Workspace > Preferences.
 
 
-
